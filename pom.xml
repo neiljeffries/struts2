@@ -120,6 +120,7 @@
     <build>
         <finalName>hello-world</finalName>
         <plugins>
+            <!-- cmd: mvn jetty:run -->
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
@@ -137,14 +138,14 @@
                 </configuration>
             </plugin>
 
-            <!-- run this cmd: "mvn clean package" -->
+            <!-- cmd: "mvn clean package" -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
             </plugin>
 
-            <!-- 1. Run this cmd: "mvn javadoc:javadoc"
+            <!-- 1. cmd: "mvn javadoc:javadoc"
                  2. The following folder will be created: "target/site/apidocs"
                  3. Open index.html file in your browser: "target/site/apidocs/index.html" -->
             <plugin>
@@ -156,7 +157,7 @@
                 </configuration>
             </plugin>
 
-            <!-- 1. Run this cmd: "mvn site"
+            <!-- 1. cmd: "mvn site"
                  2. The following folder will be created: "target/site"
                  3. Open index.html file in your browser: "target/site/index.html" -->
             <plugin>
@@ -165,7 +166,7 @@
                 <version>4.0.0-M4</version>
             </plugin>
 
-            <!-- 1. Run this cmd: "mvn verify".
+            <!-- 1. cmd: "mvn verify".
                  2. It will generate a report in the target directory named: "dependency-check-report.html" -->
             <plugin>
                 <groupId>org.owasp</groupId>
