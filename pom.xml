@@ -131,6 +131,10 @@
                     </webApp>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
+                    <httpConnector>
+                        <!--host>localhost</host-->
+                        <port>8088</port>
+                      </httpConnector>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <scanTargets>
                         <scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
